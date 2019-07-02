@@ -3,14 +3,17 @@
 - From the project root directory, run `npm install`, then run `node server.js`
 - Next, go to `http://localhost:3001/` in your browser
 
-
-
 # Requirements (bug fixes)
 
 Make it work. Should be able to:    
-- Add new `todo`
+- Add new `todo` properly
 - Mark a `todo` as complete by clicking checkmark
 - Delete a `todo` by clicking trashcan
+
+Files you should be working with:
+- `index.html`
+- `main.js`
+- `api.js` (inside of `/server/routes`)
 
 # Features
 - Allow the user to "toggle" a complete
