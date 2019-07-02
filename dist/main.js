@@ -1,23 +1,23 @@
 // BAD PRACTICE - not proper MVC. Should be separated to files.
-const add = function () {
-    $.post('/todo', { text: $("#todo-input").val() }, function (todos) {
-        render(todos)
-        $("#todo-input").val("")
-    })
-}
-
 const render = function (todos) {
 
     $("#todos").empty()
 
     todos.forEach(todo => {
         $("#todos").append(`
-        <div data-id=${todo.id} class="todo ${todo.complete ? 'complete' : ''}">
+        <div data-id=${todo._id} class="todo ${todo.complete ? 'complete' : ''}">
             <i class="fas fa-check-circle"></i>
-            <span class=text>${todo.text}</span>
+            <span class=text>todo.text</span>
             <span class="delete"><i class="fas fa-trash"></i></span>
         </div>
         `)
+    })
+}
+
+const add = function () {
+    $.post('/todo', { text: $("#todo-input").val() }, function (todos) {
+        render(todos)
+        $("#todo-input").val("")
     })
 }
 
