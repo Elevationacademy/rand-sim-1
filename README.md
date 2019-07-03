@@ -1,7 +1,12 @@
-# Running
+# Running/Environment
 
 - From the project root directory, run `npm install`, then run `node server.js`
 - Next, go to `http://localhost:3001/` in your browser
+- **Note**: if you make changes in `api.js` you **must** "exit the server" by pressing `ctrl + c` in the terminal, and then run `node server.js` again to "start the server" again
+
+### Debugging
+When you do a `console.log` inside of `api.js`, you won't see the log in the browser. You'll see it in the terminal where you ran `node server.js`, so make sure to look there as well for errors/logs.
+
 
 # Requirements (bug fixes)
 
