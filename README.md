@@ -1,5 +1,6 @@
 # Running/Environment
 
+- Make sure you **fork** this repository to your own Github, then clone it to your computer
 - From the project root directory, run `npm install`, then run `node server.js`
 - Next, go to `http://localhost:3001/` in your browser
 - **Note**: if you make changes in `api.js` you **must** "exit the server" by pressing `ctrl + c` in the terminal, and then run `node server.js` again to "start the server" again
