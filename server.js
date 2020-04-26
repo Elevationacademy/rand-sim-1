@@ -8,7 +8,7 @@ const bodyParser = require('body-parser')
 const api = require('./server/routes/api')
 
 // Connecting to Mongo Database
-mongoose.connect('mongodb://localhost/todos', { useNewUrlParser: true })
+// mongoose.connect('mongodb://localhost/todos', { useNewUrlParser: true })
 
 // Setting up express, serving client files, configuring bodyParser
 const app = express()

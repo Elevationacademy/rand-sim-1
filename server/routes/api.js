@@ -26,7 +26,7 @@ router.put('/todo/:todoID', function (req, res) {
 router.delete('/todo/:todoID', function (req, res) {
     const todoID = req.params.todoID
     todos.splice(todoID, 1)
-
+    console.log('hello')
     res.send(todos)
 })
 
